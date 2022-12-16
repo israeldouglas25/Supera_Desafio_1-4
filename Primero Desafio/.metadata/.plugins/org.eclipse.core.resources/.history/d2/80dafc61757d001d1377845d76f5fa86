@@ -1,0 +1,41 @@
+package primeiro.desafio;
+
+import java.util.ArrayList;
+import java.util.Comparator;
+import java.util.List;
+import java.util.Scanner;
+
+public class OrdenandoNumerosParesImpares {
+
+	public static void main(String[] args) {
+		Scanner s = new Scanner(System.in);
+		int numero = 0;
+		
+		System.out.println("Quantos numeros vai incluir na lista?");
+		int linhas = s.nextInt();
+
+		List<Integer> numerosPares = new ArrayList<>();
+		List<Integer> numerosImpares = new ArrayList<>();
+
+		for (int i = 1; i <= linhas; i++) {
+			System.out.println("Digite o " + i + "° numero positivo:");
+			numero = s.nextInt();
+			if (numero < 0) {
+				System.out.println("Não é permitido numero negativo.");
+			}
+			if (numero >= 0 && numero % 2 == 0) {
+				numerosPares.add(numero);
+			} else {
+				numerosImpares.add(numero);
+			}
+		}
+
+		numerosPares.sort(Comparator.naturalOrder());
+		numerosImpares.sort(Comparator.reverseOrder());
+
+		numerosPares.forEach(System.out::println);
+		numerosImpares.forEach(System.out::println);
+
+	}
+
+}

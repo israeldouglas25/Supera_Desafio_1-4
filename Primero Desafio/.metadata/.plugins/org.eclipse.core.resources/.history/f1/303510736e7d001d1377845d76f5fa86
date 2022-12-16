@@ -1,0 +1,17 @@
+package primeiro.desafio;
+
+import java.util.Scanner;
+
+public class OrdenandoNumerosParesImpares {
+
+	public static void main(String[] args) {
+		Scanner s = new Scanner(System.in);
+
+		System.out.println("Digite um numero positivo:");
+		int numero = s.nextInt();
+		
+		System.out.println(numero);
+
+	}
+
+}

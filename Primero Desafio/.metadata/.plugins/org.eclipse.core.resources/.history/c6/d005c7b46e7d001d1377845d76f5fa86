@@ -1,0 +1,25 @@
+package primeiro.desafio;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+public class OrdenandoNumerosParesImpares {
+
+	public static void main(String[] args) {
+		Scanner s = new Scanner(System.in);
+		int numero = 0;
+
+		List<Integer> numeros = new ArrayList<>();
+
+		for (int i = 0; i < 4; i++) {
+			System.out.println("Digite o " + i + "° numero positivo:");
+			numero = s.nextInt();
+			numeros.add(numero);
+		}
+
+		numeros.forEach(System.out::print);
+
+	}
+
+}
