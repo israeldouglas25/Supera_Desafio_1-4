@@ -1,4 +1,0 @@
-INDEX VERSION 1.131+C:\Users\israe\OneDrive\Área de Trabalho\SUPERA - Desafio 1 ao 4\Primero Desafio\.metadata\.plugins\org.eclipse.jdt.core
-1865797976.index
-3309397323.index
-2128575829.index
